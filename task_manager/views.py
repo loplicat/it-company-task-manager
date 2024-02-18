@@ -10,7 +10,7 @@ from task_manager.forms import (
     WorkerCreationForm,
     WorkerUpdateForm,
     TaskTypeSearchForm,
-    PositionSearchForm, WorkerSearchForm
+    PositionSearchForm, WorkerSearchForm, TaskSearchForm
 )
 from task_manager.models import TaskType, Position, Worker, Task
 
@@ -161,7 +161,22 @@ class WorkerDeleteView(LoginRequiredMixin, generic.DeleteView):
 class TaskListView(LoginRequiredMixin, generic.ListView):
     model = Task
     paginate_by = 10
-    queryset = Task.objects.all()
+
+    def get_context_data(self, *, object_list=None, **kwargs):
+        context = super(TaskListView, self).get_context_data(**kwargs)
+        name = self.request.GET.get("name", "")
+        context["search_form"] = TaskSearchForm(
+            initial={"name": name}
+        )
+        return context
+
+    def get_queryset(self):
+        form = TaskSearchForm(self.request.GET)
+        if form.is_valid():
+            return Task.objects.filter(
+                name__icontains=form.cleaned_data["name"]
+            )
+        return Task.objects.all()
 
 
 class TaskDetailView(LoginRequiredMixin, generic.DetailView):
