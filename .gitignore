@@ -6,3 +6,5 @@ db.sqlite3
 .env
 /sample.env
 /.bash_profile
+static/assets/img
+static/assets/fonts
