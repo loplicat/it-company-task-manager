@@ -4,7 +4,6 @@ venv
 db.sqlite3
 **/.DS_Store
 .env
-/sample.env
 /.bash_profile
 static/assets/img
 static/assets/fonts
