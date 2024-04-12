@@ -4,7 +4,7 @@
 
 ## Check it out!
 
-https://task-manager-eoi3.onrender.com/
+[Task Manager project deployed to Render](https://task-manager-eoi3.onrender.com/)
 
 Use the following user to log in:
 
@@ -15,15 +15,15 @@ password: user12345
 
 ## Installation
 
-Run following code in terminal:
+Run the following code in terminal:
 
 ```shell
 git clone https://github.com/loplicat/it-company-task-manager.git
 cd it-company-task-manager
 python3 -m venv venv
 source venv/bin/activate
-pip install -r requirements.txt
-python manage.py runserver
+pip3 install -r requirements.txt
+python3 manage.py runserver
 ```
 
 After that, you can easily open the project in your browser.
