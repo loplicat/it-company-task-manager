@@ -22,13 +22,13 @@
         </div>
       </div>
       <div class="row">
-        {% if task.priority == "1" %}
+        {% if task.priority == "Urgent" %}
           <p><span class="badge btn-danger">Urgent</span></p>
-        {% elif task.priority == "2" %}
+        {% elif task.priority == "High-priority" %}
           <p><span class="badge btn-warning">High-priority</span></p>
-        {% elif task.priority == "3" %}
+        {% elif task.priority == "Medium-priority" %}
           <p><span class="badge btn-info">Medium-priority</span></p>
-        {% elif task.priority == "4" %}
+        {% elif task.priority == "Low-priority" %}
           <p><span class="badge btn-success">Low-priority</span></p>
         {% endif %}
         <hr>
