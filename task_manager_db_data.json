@@ -533,7 +533,7 @@
       "description": "Update the user guide with the latest features and changes.",
       "deadline": "2024-03-15",
       "is_completed": false,
-      "priority": 3,
+      "priority": "Medium-priority",
       "task_type": 1,
       "assignees": [15]
     }
@@ -546,7 +546,7 @@
       "description": "Investigate and fix the issue with login functionality.",
       "deadline": "2024-03-20",
       "is_completed": false,
-      "priority": 2,
+      "priority": "High-priority",
       "task_type": 2,
       "assignees": [4, 5]
     }
@@ -559,7 +559,7 @@
       "description": "Review the code for feature Y and provide feedback.",
       "deadline": "2024-03-25",
       "is_completed": false,
-      "priority": 4,
+      "priority": "Low-priority",
       "task_type": 3,
       "assignees": [3, 12]
     }
@@ -572,7 +572,7 @@
       "description": "Prepare and deploy version 1.2 to production servers.",
       "deadline": "2024-03-30",
       "is_completed": false,
-      "priority": 2,
+      "priority": "High-priority",
       "task_type": 4,
       "assignees": [12]
     }
@@ -585,7 +585,7 @@
       "description": "Conduct research on emerging technologies for potential integration.",
       "deadline": "2024-04-05",
       "is_completed": false,
-      "priority": 3,
+      "priority": "Medium-priority",
       "task_type": 5,
       "assignees": [13]
     }
@@ -598,7 +598,7 @@
       "description": "Organize and facilitate a team meeting to discuss project progress.",
       "deadline": "2024-04-10",
       "is_completed": false,
-      "priority": 4,
+      "priority": "Low-priority",
       "task_type": 6,
       "assignees": [6]
     }
@@ -611,7 +611,7 @@
       "description": "Schedule and conduct a training session for new team members.",
       "deadline": "2024-04-15",
       "is_completed": false,
-      "priority": 3,
+      "priority": "Medium-priority",
       "task_type": 7,
       "assignees": [2]
     }
@@ -624,7 +624,7 @@
       "description": "Perform routine maintenance tasks on the system servers.",
       "deadline": "2024-04-20",
       "is_completed": false,
-      "priority": 2,
+      "priority": "High-priority",
       "task_type": 8,
       "assignees": [8]
     }
@@ -637,7 +637,7 @@
       "description": "Refactor the codebase to improve code quality and maintainability.",
       "deadline": "2024-04-25",
       "is_completed": false,
-      "priority": 2,
+      "priority": "High-priority",
       "task_type": 9,
       "assignees": [3]
     }
@@ -650,7 +650,7 @@
       "description": "Implement security measures to protect against potential threats.",
       "deadline": "2024-04-30",
       "is_completed": false,
-      "priority": 1,
+      "priority": "Urgent",
       "task_type": 10,
       "assignees": [10]
     }
