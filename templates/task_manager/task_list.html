@@ -37,13 +37,13 @@
                   <p>
                     {{ task.description|truncatewords:20 }}
                   </p>
-                  {% if task.priority == "Urgent" %}
+                  {% if task.priority == "1" %}
                     <p><span class="badge btn-danger">Urgent</span></p>
-                  {% elif task.priority == "High-priority" %}
+                  {% elif task.priority == "2" %}
                     <p><span class="badge btn-warning">High-priority</span></p>
-                  {% elif task.priority == "Medium-priority" %}
+                  {% elif task.priority == "3" %}
                     <p><span class="badge btn-info">Medium-priority</span></p>
-                  {% elif task.priority == "Low-priority" %}
+                  {% elif task.priority == "4" %}
                     <p><span class="badge btn-success">Low-priority</span></p>
                   {% endif %}
                   <p>
